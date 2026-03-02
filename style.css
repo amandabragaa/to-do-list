@@ -1,0 +1,9 @@
+body {
+  background-color: aqua;
+}
+
+.completed label span {
+  text-decoration: line-through;
+  color: gray;
+  border: 1px solid gray;
+}
