@@ -3,6 +3,13 @@ const listContainer = document.getElementById("list-container");
 const completedCounter = document.getElementById("completed-counter");
 const uncompletedCounter = document.getElementById("uncompleted-counter");
 
+inputBox.addEventListener("keypress", function (event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("input-button").click();
+  }
+});
+
 function addTask() {
   const task = inputBox.value.trim();
 
@@ -32,6 +39,7 @@ function addTask() {
 
   checkbox.addEventListener("click", function () {
     li.classList.toggle("completed", checkbox.checked);
+    updateCounters();
   });
 
   editBtn.addEventListener("click", function () {
