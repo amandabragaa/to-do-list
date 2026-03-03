@@ -79,6 +79,10 @@ li {
   background: none;
 }
 
+#task-counters {
+  margin-top: 20px;
+}
+
 .completed label span {
   text-decoration: line-through;
   color: gray;
