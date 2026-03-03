@@ -25,8 +25,8 @@ function addTask() {
       <input type="checkbox" >
       <span>${task}</span>
     </label>
-    <span class="edit-btn">Edit</span>
     <span class="delete-btn">Delete</span>
+    <span class="edit-btn">Edit</span>
     `;
 
   listContainer.appendChild(li);
